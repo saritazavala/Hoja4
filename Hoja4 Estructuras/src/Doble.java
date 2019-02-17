@@ -77,7 +77,6 @@ public E remove(E value)
         {
         finger.next().setPrevious(finger.previous());
         } else {
-        206 Lists
         tail = finger.previous();
         }
         count--; // fewer elements
