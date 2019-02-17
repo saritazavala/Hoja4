@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Pila<E>implements iPila<E> {
+public abstract class Pila<E>implements iPila<E> {
 
     Vector<E> vector = new Vector<E>(); //Se crea un vector con elementos E
 
