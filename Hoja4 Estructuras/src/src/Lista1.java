@@ -7,17 +7,17 @@ Lista1: utiliza los metodos de la clase Pila
 */
 public class Lista1<E> extends Pila<E>{
 
-    private String tipo;
-    private ListaAbstracta<E> NuevaLista;
-    private Factory1<E> factory = new Factory1<>();
+    private String tipo; //tipo String
+    private ListaAbstracta<E> NuevaLista; //Se crea nueva lista Abstracta
+    private Factory1<E> factory = new Factory1<>(); //Se crea un factory nuevo
 
 
     public Lista1(String tipo) {
         this.tipo = tipo;
-        NuevaLista = factory.Crear(tipo);
+        NuevaLista = factory.Crear(tipo); //Se instancea la Lista
     }
 
-
+//Aqui se declaran los mismos metodos que en una pila
     public void push(E item) {
         NuevaLista.addFirst(item);
     }
