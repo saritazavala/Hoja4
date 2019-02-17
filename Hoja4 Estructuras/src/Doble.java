@@ -85,3 +85,5 @@ public E remove(E value)
         }
         return null;
         }
+
+// referencias:  libro de texto: Data Structures in java fir the principled programmer
