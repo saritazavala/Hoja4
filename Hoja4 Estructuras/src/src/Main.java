@@ -15,6 +15,9 @@ import java.util.*;
 
 
 public class Main {
+    //Se crean todas las variables a utilizar
+    //Incluida la calculadora, su instacia, para leer el archivo txt
+    //y un factory
     public static void main(String[] args) {
         double x = 0;
         double y = 0;
@@ -25,14 +28,15 @@ public class Main {
         File archivo = null;
         FileReader fr = null;
         BufferedReader br = null;
-        Scanner teclado = new Scanner(System.in);
-        Calculadora calculadora = Calculadora.getCalculatorInstance();
+        Scanner teclado = new Scanner(System.in); //Teclado para ingresar datos
+        Calculadora calculadora = Calculadora.getCalculatorInstance(); 
         Pila pila = null;
         Factory1<String> factory = new Factory1<String>();
 
         System.out.println("Ingrese direccion de su archivo:");
         String direccionDeArchivo = teclado.nextLine();
-
+        //Desde aqui se le pide al usario que ingrese la direccion
+        //Se prueba y si se encuentra el documento se continua, si no marcará error
 
         try {
             // Apertura del fichero y creacion de BufferedReader para poder
@@ -102,7 +106,8 @@ public class Main {
 
             }
 
-
+            //Si se ingresa una opcion valida continuara el proceso
+            //Este codigo es el de la HDT2
             if (operar == true) {
                 char[] datos = line.toCharArray();
 
